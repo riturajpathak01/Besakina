@@ -16,17 +16,26 @@
         </div>
         
         <div class="logo">
+          <a href="#">
             <img src="./assets/logo.png" class="nav_logo" alt="">
+          </a>
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="about.html">About us</a></li>
+            <li class="about-tab">
+              <a href="about.html" >About us</a>
+              <div class="about-list">
+                <a href="about.html"><p>Why Besakina.com</p></a>
+                <a href="about.html"><p>Our team</p></a>
+              </div>
+            </li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="specifications.html">Specifications</a></li>
             <li><a href="contact.html">Contact</a></li>
          
 
         </ul>
+
         <div class="nav_socials">
           <a href="https://www.facebook.com/besakinalive" target="_blank" style="text-decoration: none;"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://twitter.com/Besakinalive" target="_blank" style="text-decoration: none;"> <i class="fa-brands fa-twitter"></i></a>
@@ -43,7 +52,7 @@
         <div class="sidebar-menu">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="specifications.html">Specifications</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -204,15 +213,15 @@
                 confirmButtonText: 'OK',
                 }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href(`http://127.0.0.1:5500/index.html?`)
+                    window.location.href(`http://www.besakina.com`)
                 } 
                 })"
                 class="registration_form">
                <h2>Connect with us</h2>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html?">
+                <input type="hidden" name="_next" value="http://www.besakina.com">
                 <input type="text" placeholder="Name" name="name" id="name" required>
                 <input type="text" placeholder="Email" name="email" id="email" required>
-                <input type="text" placeholder="Phone Number" name="phonenumber" id="phnumber" required>
+                <input type="number" placeholder="Phone Number" name="phonenumber" id="phnumber" required>
                 <input type="text" placeholder="Company name" name="companyname" id="companyname" class="message" required>
                 <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="6" required style="padding: 1rem;"></textarea>
                  <input type="hidden" name="_captcha" value="false">
@@ -225,11 +234,11 @@
             <div class="contacts">
               <div class="contact">
                 <h6><b>Phone number:</b></h6>
-                <p>+91 7664822222</p>
+                <p>+91 76648-22222</p>
               </div>
               <div class="contact">
                 <h6><b>Email:</b></h6>
-                <p>besakina.com@gmail.com
+                <p>info@ekodus.com
                 </p>
               </div>
               <div class="contact">
@@ -265,19 +274,7 @@
       </footer>
 
       
-      <script>
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.querySelector(".topbar").style.padding = "5px 4rem";
-           
-          } else {
-            document.querySelector(".topbar").style.padding = "10px 4rem";
-           
-          }
-        }
-      </script>
+     
       <script src="script.js"></script>
     
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

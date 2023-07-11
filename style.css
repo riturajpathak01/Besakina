@@ -71,6 +71,25 @@ body{
     padding-top: 7px;
     font-size: 1.2rem;
 }
+.about-list{
+    position: absolute;
+    top: 75%;
+    padding: 10px 1rem;
+    padding-top: 1rem;
+    background-color: #1f688c;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: none;
+    color: white;
+}
+.about-tab:hover .about-list{
+    display: block;
+
+}
+.about-list a, .about-list a:hover{
+    text-decoration: none;
+    color: white;
+}
 
 
 .sidebar{

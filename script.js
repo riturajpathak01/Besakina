@@ -1,3 +1,15 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".topbar").style.padding = "5px 4rem";
+   
+  } else {
+    document.querySelector(".topbar").style.padding = "10px 4rem";
+   
+  }
+}
+
 function closesidebar(){
     document.getElementById('sidebarid').classList.add("hidesidebar")
     document.body.classList.remove("stopscroll")

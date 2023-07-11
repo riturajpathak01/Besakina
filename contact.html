@@ -16,11 +16,19 @@
         </div>
         
         <div class="logo">
+          <a href="index.html">
             <img src="./assets/logo.png" class="nav_logo" alt="">
+          </a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
+            <li class="about-tab">
+              <a href="about.html" >About us</a>
+              <div class="about-list">
+                <a href="about.html"><p>Why Besakina.com</p></a>
+                <a href="about.html"><p>Our team</p></a>
+              </div>
+            </li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="specifications.html">Specifications</a></li>
             <li><a href="#">Contact</a></li>
@@ -42,7 +50,7 @@
         <div class="sidebar-menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="specifications.html">Specifications</a></li>
             <li><a href="#">Contact</a></li>
@@ -74,18 +82,19 @@
                 confirmButtonText: 'OK',
                 }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href(`http://127.0.0.1:5500/index.html?`)
+                    window.location.href(`http://www.besakina.com`)
                 } 
                 })"
                class="registration_form_contact">
                 <h2 style="color: white;">Connect with us</h2>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html?">
+               
                 <input type="text" placeholder="Name" name="name" id="name" required>
                 <input type="text" placeholder="Email" name="email" id="email" required>
-                <input type="text" placeholder="Phone Number" name="phonenumber" id="phnumber" required>
+                <input type="number" placeholder="Phone Number" name="phonenumber" id="phnumber" required>
                 <input type="text" placeholder="Company name" name="companyname" id="companyname" class="message" required>
                 <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="6" required style="padding: 1rem;"></textarea>
                  <input type="hidden" name="_captcha" value="false">
+                 <input type="hidden" name="_next" value="http://www.besakina.com">
                   <input type="submit" name="submit" value="Submit" id="submitbtn" style="background-color: transparent; border: 1px solid white; color: white;"   > 
              </form>
         </div>
@@ -98,7 +107,7 @@
           </div>
           <div class="contact">
             <h6><b>Email:</b></h6>
-            <p>besakina.com@gmail.com
+            <p>info@ekodus.com
             </p>
           </div>
           <div class="contact">
