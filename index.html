@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besakina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+<body>
+      <nav class="topbar">
+        <div class="menu-icon">
+          <button class="menuopenbtn" onclick="opensidebar()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        
+        <div class="logo">
+            <img src="./assets/logo.png" class="nav_logo" alt="">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="specifications.html">Specifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         
+
+        </ul>
+        <div class="nav_socials">
+          <a href="https://www.facebook.com/besakinalive" target="_blank" style="text-decoration: none;"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/Besakinalive" target="_blank" style="text-decoration: none;"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/besakina-com/?viewAsMember=true" target="_blank" style="text-decoration: none;"> <i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+      </nav>
+      <div class="sidebar hidesidebar" id="sidebarid">
+          
+        <div class="sidebar-logo">
+          <img src="./assets/logo.png" alt="">
+          <button class="menuclosebtn" onclick="closesidebar()"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="sidebar-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="specifications.html">Specifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+          </ul>
+
+        </div>
+      </div>
+      <main>
+        <div id="carouselExample" class="carousel slide carousel-large" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./assets/dummy_banner_01.jpg" class="d-block w-100" alt="...">
+              </div> -->
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./assets/Web Banner 1-01.jpg" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="carousel-item " data-bs-interval="3000">
+                <img src="./assets/Web Banner-02.jpg" class="d-block w-100 " alt="...">
+              </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <!-- Carousel ends -->
+
+          <!-- mobile carousel -->
+
+          <div id="carouselExample" class="carousel slide carousel-small" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./assets/dummy_banner_01.jpg" class="d-block w-100" alt="...">
+              </div> -->
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./assets/Web Banner-03.jpg" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="carousel-item " data-bs-interval="3000">
+                <img src="./assets/Web Banner-04.jpg" class="d-block w-100 " alt="...">
+              </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- about -->
+
+          <div class="about_container">
+          
+            <h2 class="section_title">About us</h2>
+          
+            <div class="aboutus" id="about_id">
+            <div class="about_text">
+              <img src="./assets/small_logo.png" class="small_logo" alt="">
+              <p>BesaKina.com is a Direct Mail Advertising Agency. BesaKina.com, through its Direct mailing services provide information and offers about businesses in any Local area to the residents of that area, who share the same Pincode. It uses printed leaflets enclosed in an envelope as a mode of advertisement for businesses, distribute it to demographically targeted households. 
+                BesaKina.com is trusted by businesses to drive sales and brand awareness through its mailing services. Besakina.com is targeting the businesses of Guwahati city. Our team divides the city into different zones and distributes the creatively designed envelope to the residents of the city once every quarter in a year.
+                </p>
+              <!-- <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+              </ul> -->
+            </div>
+            <div class="about_image">
+              <img src="./assets/whychooseus.jpg" alt="">
+            </div>
+          </div>
+
+          </div>
+
+          
+
+          <!-- <div class="connections" id="partners_id">
+           
+            <h2 class="section_title">Our partners</h2>
+
+            <div class="connection_cards">
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>lorem ipsum</p>
+                   
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="connection_card">
+                    <img src="./assets/dummy_logo.jpg" alt="">
+                    <h5>Dummy Company</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+          </div> -->
+
+          <div class="tag_strip">
+            <div class="tag_strip_text_container">
+                <!-- <i class="fa fa-duotone fa-house"></i> -->
+                <img src="./assets/pngegg.png" alt="">
+                <div class="tag_strip_text">
+                    <h3>Advertise your business with BesaKina.com</h3>
+                    <p>BesaKina.com targets all the households of your city. Let us help you reach out to the target audiences of your business. Increase Brand Awareness & increase in  revenue of your business with BesaKina.com</p>
+                    
+                </div>
+               
+            </div>
+            <!-- <button>Grow your business</button> -->
+            <form action="https://formsubmit.co/riturajpathak1998@gmail.com" method="POST" onsubmit="document.getElementById('submitbtn').disabled=true;
+            Swal.fire({
+                icon: 'success',
+                title: 'Great',
+                text: 'Your inquiry has been submitted successfully',
+                confirmButtonText: 'OK',
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href(`http://127.0.0.1:5500/index.html?`)
+                } 
+                })"
+                class="registration_form">
+               <h2>Connect with us</h2>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html?">
+                <input type="text" placeholder="Name" name="name" id="name" required>
+                <input type="text" placeholder="Email" name="email" id="email" required>
+                <input type="text" placeholder="Phone Number" name="phonenumber" id="phnumber" required>
+                <input type="text" placeholder="Company name" name="companyname" id="companyname" class="message" required>
+                <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="6" required style="padding: 1rem;"></textarea>
+                 <input type="hidden" name="_captcha" value="false">
+                  <input type="submit" name="submit" value="Submit" id="submitbtn" style="background-color: transparent; border: 1px solid white; color: white;"   > 
+            </form>
+
+          </div>
+          <div class="contact_container" id="contact_id">
+            <h2 class="section_title">Contacts</h2>
+            <div class="contacts">
+              <div class="contact">
+                <h6><b>Phone number:</b></h6>
+                <p>+91 7664822222</p>
+              </div>
+              <div class="contact">
+                <h6><b>Email:</b></h6>
+                <p>besakina.com@gmail.com
+                </p>
+              </div>
+              <div class="contact">
+                <h6><b>Address:</b></h6>
+                <p style="font-size: 14px; padding: 1rem; text-align: center;">1D Aashi Grande, Kahilipara Road
+                  Ganeshguri, Guwahati</p>
+              </div>
+             
+            </div>
+          </div>
+
+      </main>
+
+      <footer>
+        <ul class="footer_nav">
+            <a href="#" style="text-decoration: none; color: white;"><li>Home</li></a>
+            <a href="about.html" style="text-decoration: none; color: white;"><li>About us</li></a>
+            <a href="categories.html" style="text-decoration: none; color: white;"><li>Categories</li></a>
+            <a href="specifications.html" style="text-decoration: none; color: white;"><li>Specification</li></a>
+            <a href="contact.html" style="text-decoration: none; color: white;"><li>Contact</li></a>
+          
+        </ul>
+        <div class="footer_socials">
+          <a href="https://www.facebook.com/besakinalive" target="_blank" style="text-decoration: none; color: white;"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/besakinalive/" target="_blank" style="text-decoration: none; color: white;"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/Besakinalive" target="_blank" style="text-decoration: none; color: white;"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/besakina-com/?viewAsMember=true" target="_blank" style="text-decoration: none; color: white;"> <i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://in.pinterest.com/besakinalive/" target="_blank" style="text-decoration: none; color: white;"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        <div class="copyright">
+           <p>© 2023 All Right and Reserved | <a href="#" style="text-decoration: none; color: white;">Besakina.com</a></p>
+        </div>
+      </footer>
+
+      
+      <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.querySelector(".topbar").style.padding = "5px 4rem";
+           
+          } else {
+            document.querySelector(".topbar").style.padding = "10px 4rem";
+           
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    </body>
+</html>
